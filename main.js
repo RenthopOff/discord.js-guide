@@ -64,8 +64,8 @@ bot.on('guildMemberAdd', async member => {
         .setColor(0x41b581)
         .setFooter(`ID: ${member.id}`)
         .setTimestamp()
+    
     await channel.send(embed)
-    await member.addRole(role.id)
 })
 
 bot.on('guildMemberRemove', async member => {
