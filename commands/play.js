@@ -1,5 +1,6 @@
 const ytdl = require('ytdl-core')
 const queue = new Map()
+const ffmpeg = require('ffmpeg')
 
 module.exports.run = async (bot, message, args) => {
     let song = args[0], voice = message.member.voiceChannel
